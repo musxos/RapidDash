@@ -1,9 +1,9 @@
 {
-    "version": 1,
+    "version": 2,
     "env": {
-        "MONGO_URI": "@mongo_uri",
-        "INITIAL_PASSWORD": "@initial",
-        "CDN_PATH":"@cdn"
+        "MONGO_URI": "mongodb://127.0.0.1:27017/rapid_chain",
+        "INITIAL_PASSWORD": "123456",
+        "CDN_PATH":""
     },
     "builds": [
         {
