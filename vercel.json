@@ -1,7 +1,9 @@
 {
     "version": 2,
     "env": {
-        "MONGO_URI": "@mongo_uri"
+        "MONGO_URI": "@mongo_uri",
+        "INITIAL_PASSWORD": "@initial",
+        "CDN_PATH":"@cdn"
     },
     "builds": [
         {
