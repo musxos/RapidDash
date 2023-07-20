@@ -1,5 +1,5 @@
 {
-    "version": 2,
+    "version": 1,
     "env": {
         "MONGO_URI": "@mongo_uri",
         "INITIAL_PASSWORD": "@initial",
