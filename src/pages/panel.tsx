@@ -75,7 +75,7 @@ export default function Panel() {
       )}
       <nav className="w-full bg-white py-4 lg:hidden block z-10">
         <div className="container mx-auto px-4 flex">
-          <h1>Dashboard</h1>
+          <h1>Dapp Center</h1>
           <svg
             onClick={() => setSidebar(true)}
             xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@ export default function Panel() {
                 <UserAvatar size={128} avatarId={account.address} />
                 <h1>{account.isConnected && sliceAddress(account.address)}</h1>
                 <p className="text-sm px-3 py-1 rounded-full bg-green-300 mt-4">
-                  Validator
+                  RapidUser
                 </p>
               </div>
               <button
@@ -137,24 +137,21 @@ export default function Panel() {
                   </p>
                 </li>
                 <li>
-                  <h3 className="text-black/50 text-sm">Total Supply:</h3>
-                  <p className="font-medium text-black/70">$4,505.50</p>
+                  <h3 className="text-black/50 text-sm">Airdrop Supply:</h3>
+                  <p className="font-medium text-black/70">1.000.000</p>
                 </li>
                 <li>
                   <h3 className="text-black/50 text-sm">Completed Tasks:</h3>
-                  <p className="font-medium text-black/70">47</p>
+                  <p className="font-medium text-black/70">0</p>
                 </li>
-                <li>
-                  <h3 className="text-black/50 text-sm">Validated Blocks:</h3>
-                  <p className="font-medium text-black/70">4,753,450</p>
-                </li>
+            
                 <li>
                   <h3 className="text-black/50 text-sm">Projects:</h3>
-                  <p className="font-medium text-black/70">3</p>
+                  <p className="font-medium text-black/70">0</p>
                 </li>
                 <li>
                   <h3 className="text-black/50 text-sm">You won:</h3>
-                  <p className="font-medium text-black/70">$303.50</p>
+                  <p className="font-medium text-black/70">0</p>
                 </li>
                 <li>
                   <h3 className="text-black/50 text-sm">
@@ -181,7 +178,7 @@ export default function Panel() {
           <div className="flex flex-col gap-6 grow">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="flex flex-col bg-white px-8 py-4 rounded-lg">
-                <h1 className="text-xl text-black/60 font-medium">TXS</h1>
+                <h1 className="text-xl text-black/60 font-medium">Txs</h1>
                 <p className="text-4xl mt-6 font-semibold text-black/80">
                   {details.txs}
                 </p>
@@ -193,7 +190,7 @@ export default function Panel() {
                 </p>
               </div>
               <div className="flex flex-col bg-white px-8 py-4 rounded-lg">
-                <h1 className="text-xl text-black/60 font-medium">Ref.</h1>
+                <h1 className="text-xl text-black/60 font-medium">Ref</h1>
                 <p className="text-4xl mt-6 font-semibold text-black/80">
                   1.000
                 </p>
@@ -202,7 +199,7 @@ export default function Panel() {
             <div className="bg-white px-8 py-4 rounded-lg w-full">
               <h1 className="text-xl text-black/60 font-medium">Tasks</h1>
               <p className="text-black/30 text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              From this section, you can follow weekly tasks and earn points quickly.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full mt-8">
@@ -248,8 +245,7 @@ export default function Panel() {
                 Rapid Chain Projects
               </h1>
               <p className="text-black/30 text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                deserunt tenetur illum, assumenda ex dignissimos.
+              Follow and use the applications developed on Rapid Network; in this way, you can earn points faster.
               </p>
               <div className="flex flex-col my-4">
                 <input
