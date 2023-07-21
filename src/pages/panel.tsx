@@ -46,7 +46,7 @@ export default function Panel() {
     e.preventDefault();
 
     window.navigator.clipboard.writeText(
-      "https://rapidchain.io/?ref=" + account.address
+      "https://rapidchain.io/?ref=" + account.address,
     );
 
     setCopyButtonText("Copied");
@@ -62,7 +62,7 @@ export default function Panel() {
     {
       "-translate-x-full": !sidebar,
       "translate-x-0 h-screen": sidebar,
-    }
+    },
   );
 
   return (
@@ -298,10 +298,16 @@ export default function Panel() {
                     className="flex flex-col items-center overflow-hidden px-6 py-4 rounded border border-transparent hover:border-neutral-200 cursor-pointer w-full"
                   >
                     <div className="w-[180px] h-[180px]">
-                      {!x.imageError && <img src={x.image} alt={x.name} onError={(e) => {
-                        console.error("image", e)
-                        x.imageError = true;
-                      }} />}
+                      {!x.imageError && (
+                        <img
+                          src={x.image}
+                          alt={x.name}
+                          onError={(e) => {
+                            console.error("image", e);
+                            x.imageError = true;
+                          }}
+                        />
+                      )}
                       {x.imageError && (
                         <FakeAvatar avatarKey={x.name + x._id} size={180} />
                       )}

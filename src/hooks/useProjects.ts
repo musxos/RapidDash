@@ -1,6 +1,6 @@
 import instance from "@/services/axios";
-import { debounce } from "@mui/material";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { debounce } from "lodash";
 
 export function useProjects(
   { limit, page, search } = {
