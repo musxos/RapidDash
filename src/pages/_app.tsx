@@ -5,9 +5,11 @@ import { RainbowKitProvider, getDefaultWallets } from "@rainbow-me/rainbowkit";
 import { WagmiConfig, configureChains, createConfig } from "wagmi";
 import { polygon, polygonMumbai } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
+import {customRPC} from '../customrpc/rpc'
+
 
 const { chains, publicClient } = configureChains(
-  [polygon, polygonMumbai],
+  [customRPC],
   [publicProvider()],
 );
 
