@@ -30,25 +30,6 @@ yarn-error.log*
 # vercel
 .vercel
 
-<<<<<<< HEAD
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-=======
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.vercel
->>>>>>> b76868aa28d8d971b1dae874c0e5f7cec6d8407b
