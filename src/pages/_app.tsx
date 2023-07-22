@@ -3,6 +3,7 @@
 import { store } from "@/app/store";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
+<<<<<<< HEAD
 import { Provider } from "react-redux";
 
 import "@rainbow-me/rainbowkit/styles.css";
@@ -46,6 +47,18 @@ const { chains, publicClient } = configureChains(
       },
     }),
   ],
+=======
+import { RainbowKitProvider, getDefaultWallets } from "@rainbow-me/rainbowkit";
+import { WagmiConfig, configureChains, createConfig } from "wagmi";
+import { polygon, polygonMumbai } from "wagmi/chains";
+import { publicProvider } from "wagmi/providers/public";
+import {customRPC} from '../customrpc/rpc'
+
+
+const { chains, publicClient } = configureChains(
+  [customRPC],
+  [publicProvider()],
+>>>>>>> b61894fb3fe451e22fecd1226a7ca22e9dc47fee
 );
 
 const { connectors } = getDefaultWallets({
