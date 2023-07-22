@@ -1,3 +1,0 @@
-export default {
-  ROUTER_ADDRESS: "0x1D4BAFF7891f71F00B6F193F8adb88692ca2aEEf",
-};
