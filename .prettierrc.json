@@ -1,0 +1,18 @@
+{
+  "trailingComma": "es5",
+  "tabWidth": 1,
+  "semi": true,
+  "printWidth": 200,
+  "singleQuote": true,
+  "cssEnable": [
+    "css",
+    "less",
+    "scss"
+  ],
+  "javascriptEnable": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ]
+}
