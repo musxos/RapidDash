@@ -1,5 +1,5 @@
 export const customRPC = {
-    id: 33695,
+    id: 9009,
     name: 'RAPID',
     network: 'RAPID',
     nativeCurrency: {
@@ -8,8 +8,8 @@ export const customRPC = {
         symbol: 'RAPID',
     },
     rpcUrls: {
-        public: { http: ['https://testnet.rapidrpc.com/'] },
-        default: { http: ['https://testnet.rapidrpc.com/'] },
+        public: { http: ['https://evm.sinyordes.online/'] },
+        default: { http: ['https://evm.sinyordes.online/'] },
     },
     blockExplorers: {
         etherscan: { name: 'Etherscan', url: 'https://rapidscan.io/' },

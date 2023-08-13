@@ -1,10 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import { useAccount, useDisconnect } from "wagmi";
-import { useRouter } from "next/router";
 
 import logo from '../images/logo.png';
-
+import { useAccount, useDisconnect } from "wagmi";
+import { useRouter } from "next/router";
 function Navbar() {
     const router = useRouter();
 
@@ -18,17 +17,14 @@ function Navbar() {
           router.push("/");
         },
       });
-      
  return (
-  <div className="h-[80px] rounded-lg bg-theme-mainColor w-full flex items-center justify-between">
-   <Image src={logo} alt="" className="max-h-full object-contain my-auto" />
-   <div className="pr-4">
-    <button   
-    onClick={() => {
-                  disconnect.disconnect();
-                   }}
-       className="mx-auto px-3 rounded-md bg-theme-green text-lg text-black">Logout</button>
+  <div className="px-2 md:px-4 h-[60px] rounded-lg bg-theme-mainColor w-full flex items-center justify-between">
+   <div className="h-[50px] flex items-center justify-start max-h-full">
+    <Image src={logo} alt="" className="max-h-full my-auto object-contain w-[50px]" />
    </div>
+   <button  onClick={() => {
+                  disconnect.disconnect();
+                   }}  className="flex items-center gap-1 cursor-pointer transition-colors py-[4px] px-[23px] rounded-[6px] bg-theme-green text-[14px] text-black">Logout</button>
   </div>
  );
 }

@@ -1,9 +1,7 @@
-"use client";
-
 import React from 'react';
-import tasksImage1 from '../images/tasks-1.svg';
 import Image from 'next/image';
-import { BiCheck } from 'react-icons/bi';
+
+import demoImage from '../images/demo-avatar.png';
 import { useAccount } from 'wagmi';
 import { useState } from 'react';
 
@@ -60,20 +58,20 @@ function YourDetails() {
 
 
  
-
  return (
-  <div className={`bg-[url('../images/bg.svg')] w-full h-full flex flex-col p-6 gap-4 rounded-lg`}>
+  <div className={`bg-theme-mainColor w-full flex basis-full lg:basis-1/3 flex-col p-2 md:p-4 gap-4 rounded-lg`}>
+   <Image src={demoImage} alt="" className="rounded-full mx-auto max-w-[150px] md:max-w-[250px] w-full" />
    <div className="flex items-center justify-between">
-    <div className="flex flex-col gap-2">
-     <h2 className="text-3xl text-white">Your Details</h2>
-     {/*<h2 className="text-md text-slate-300">From this section, you can follow weekly tasks and earn points quickly.</h2>*/}
+    <div className="flex flex-col">
+     <span className="text-theme-green text-md">Your Details</span>
+     <span className="text-white text-lg">From this section, you can see your own information</span>
     </div>
    </div>
-   <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-2">
     {items.map((item, index) => (
-     <div className="bg-theme-mainColor flex flex-col gap-2 w-full p-4 rounded-lg justify-between" key={index}>
-      <span className="text-slate-300 text-sm">{item.title}</span>
-      <span style={{cursor:index === items.length-1 ? "default":""}}  onClick={e => index === items.length - 1  ? handleClickRef(e) : console.log("x") } className="font-bold text-xl text-white" >{item.desc}</span>
+     <div className="border-b-[1px] border-b-slate-400 flex flex-col gap-[1px] w-full py-2 justify-between" key={index}>
+      <span className="text-slate-300 text-md">{item.title}</span>
+      <span style={{cursor:index === items.length-1 ? "default":""}}  onClick={e => index === items.length - 1  ? handleClickRef(e) : console.log("x") } className="font-medium text-lg text-white">{item.desc}</span>
      </div>
     ))}
    </div>
