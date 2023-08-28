@@ -36,7 +36,7 @@ function YourDetails() {
   },
   {
    title: 'Airdrop Supply:',
-   desc: '1.000.000',
+   desc: '200,000.00',
   },
   {
    title: 'Tesnet Round:',
