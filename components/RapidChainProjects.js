@@ -144,7 +144,9 @@ function RapidChainProjects() {
        <div className="flex flex-col gap-2 p-2">
         
         <div className="flex items-center justify-between">
+                   <a href={x.projectUrl} target='_blank'>
          <span className="text-slate-400 text-md md:text-lg">Go to Dapp</span>
+            </a>
          <div className="flex items-center gap-2 text-slate-300">
              <a href={x.projectUrl} target='_blank'>
                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>

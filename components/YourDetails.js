@@ -16,7 +16,7 @@ function YourDetails() {
         e.preventDefault();
     
         window.navigator.clipboard.writeText(
-          "https://rapidchain.io/?ref=" + account.address,
+          "https://rapidchain.app/?ref=" + account.address,
         );
     
         setCopyButtonText("Copied");
@@ -31,23 +31,23 @@ function YourDetails() {
       
  const items = [
   {
-   title: 'Your Address:',
+   title: 'Your Wallet Address:',
    desc: account.address?.slice(0, 10)+"..."+account.address?.slice(-6)
   },
   {
-   title: 'Airdrop Supply:',
-   desc: '1.000.000',
+   title: 'Total Airdrop Supply:',
+   desc: '200,000 RAPID',
   },
   {
-   title: 'Completed Tasks:',
-   desc: '0',
+   title: 'Testnet Round:',
+   desc: '#1',
   },
   {
-   title: 'Projects:',
-   desc: '0',
+   title: 'End of Round',
+   desc: '30/09/2023',
   },
   {
-   title: 'You Won:',
+   title: 'Your Points:',
    desc: '0',
   },
   {
