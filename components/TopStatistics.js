@@ -30,7 +30,7 @@ function TopStatistics() {
       },
       {
        title: 'Ref',
-       value: '1.000',
+       value: '0',
        img: refImage,
        icon: refIcon,
       },
