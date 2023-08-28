@@ -16,7 +16,7 @@ function YourDetails() {
         e.preventDefault();
     
         window.navigator.clipboard.writeText(
-          "https://rapidchain.io/?ref=" + account.address,
+          "https://rapidchain.app/?ref=" + account.address,
         );
     
         setCopyButtonText("Copied");
