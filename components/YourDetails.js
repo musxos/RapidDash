@@ -31,16 +31,16 @@ function YourDetails() {
       
  const items = [
   {
-   title: 'Your Address:',
+   title: 'Your Wallet Address:',
    desc: account.address?.slice(0, 10)+"..."+account.address?.slice(-6)
   },
   {
-   title: 'Airdrop Supply:',
+   title: 'Total Airdrop Supply:',
    desc: '200,000.00',
   },
   {
-   title: 'Tesnet Round:',
-   desc: '#0',
+   title: 'Testnet Round:',
+   desc: '#1',
   },
   {
    title: 'End of Round',
