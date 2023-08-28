@@ -36,7 +36,7 @@ function YourDetails() {
   },
   {
    title: 'Total Airdrop Supply:',
-   desc: '200,000.00',
+   desc: '200,000 $RAPID',
   },
   {
    title: 'Testnet Round:',
