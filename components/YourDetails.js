@@ -47,7 +47,7 @@ function YourDetails() {
    desc: '30/09/2023',
   },
   {
-   title: 'You Won:',
+   title: 'Your Points:',
    desc: '0',
   },
   {
