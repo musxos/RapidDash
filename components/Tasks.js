@@ -47,7 +47,6 @@ function Tasks() {
            {name}
           </span>
          </div>
-         {sub.completed ? <BiCheck className="text-xl" /> : <BiXCircle className="text-xl" />}
         </li>
        )
          }
