@@ -39,12 +39,12 @@ function YourDetails() {
    desc: '1.000.000',
   },
   {
-   title: 'Completed Tasks:',
-   desc: '0',
+   title: 'Tesnet Round:',
+   desc: '#0',
   },
   {
-   title: 'Projects:',
-   desc: '0',
+   title: 'End of Round',
+   desc: '30/09/2023',
   },
   {
    title: 'You Won:',
