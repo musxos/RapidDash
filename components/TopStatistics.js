@@ -17,7 +17,7 @@ function TopStatistics() {
     
      const items = [
       {
-       title: 'Txs',
+       title: 'Transactions Count',
        value: details.txs,
        img: txsImage,
        icon: txsIcon,
@@ -29,7 +29,7 @@ function TopStatistics() {
        icon: volumeIcon,
       },
       {
-       title: 'Ref',
+       title: 'References',
        value: '0',
        img: refImage,
        icon: refIcon,
