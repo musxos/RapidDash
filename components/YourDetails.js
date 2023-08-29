@@ -4,6 +4,7 @@ import Image from 'next/image';
 import demoImage from '../images/demo-avatar.png';
 import { useAccount } from 'wagmi';
 import { useState, useMemo } from 'react';
+import { useDetails } from '../hooks/useDetails';
 
 function YourDetails() {
  const account = useAccount();
@@ -11,6 +12,7 @@ function YourDetails() {
  const refferalLink = 'https://rapidchain.app/?ref=' + account.address;
 
  const [copyButtonText, setCopyButtonText] = useState(refferalLink);
+ const details = useDetails(account.address);
 
  const handleClickRef = (e) => {
   e.preventDefault();
@@ -49,7 +51,7 @@ function YourDetails() {
   },
   {
    title: 'You Won:',
-   desc: '0',
+   desc: details.txs * details.volume * 0.0001,
   },
   {
    title: 'Your Reference Link:',

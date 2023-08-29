@@ -1,5 +1,4 @@
 import React from 'react';
-import { BiCheck, BiXCircle } from 'react-icons/bi';
 import { LuArrowBigRightDash } from 'react-icons/lu';
 import { useTasks } from '../hooks/useTasks';
 

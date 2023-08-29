@@ -5,6 +5,7 @@ import logo from '../images/logo.png';
 import { useAccount, useDisconnect } from 'wagmi';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { useDetails } from '../hooks/useDetails';
 function Navbar() {
  const router = useRouter();
 
@@ -18,6 +19,8 @@ function Navbar() {
    router.push('/');
   },
  });
+
+
  return (
   <div className="px-8 h-20 rounded-lg bg-neutral-800 w-full flex items-center justify-between">
    <div className="h-full flex items-center justify-start">
