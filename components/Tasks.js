@@ -1,8 +1,11 @@
 import React from 'react';
 import { LuArrowBigRightDash } from 'react-icons/lu';
 import { useTasks } from '../hooks/useTasks';
+import { useAccount } from 'wagmi';
 
 function Tasks() {
+  const account = useAccount();
+  console.log(account.address)
  const tasks = useTasks();
  const items = tasks?.tasks;
  console.log(items);
@@ -34,7 +37,7 @@ function Tasks() {
          <li className="flex pb-1 text-white justify-between" key={subIndex}>
           <div className="flex items-center gap-[2px]">
            <LuArrowBigRightDash className="text-lg" />
-           <span className={`${!!link ? 'cursor-pointer border-b-[1px] border-b-slate-300 pb-0' : 'select-none'}`} onClick={() => !!link && window.open(link, '_blank')}>
+           <span className={`${!!link ? 'cursor-pointer border-b-[1px] border-b-slate-300 pb-0' : 'select-none'}`} onClick={() => !!link && window.open(link+(name=="Faucet" ? "/?address="+(account.address ? account.address :''):''), '_blank')}>
             {name}
            </span>
           </div>
